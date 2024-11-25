@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SPA and Beauty</title>
+    <link rel="stylesheet" href="../css/font.css">
+    <!-- nav css -->
+     <link rel="stylesheet" href="../css/nav.css">
+    <!-- hero css -->
+    <link rel="stylesheet" href="../css/hero.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+    <!-- mobile css -->
+    <style>
+    #menu-icon{
+        display: none;
+    }
+      @media screen and (max-width: 766px) {
+
+        #hero{
+            flex-direction: column;
+            row-gap: 20px;
+            margin-top: 10px;
+
+        }
+ #hero-text{
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin: auto;
+ }
+ .nav{
+    visibility: hidden;
+ }
+ #menu-icon{
+        display: inline;
+
+    }
+
+}
+    </style>
+
+    <style>
+
+        #client-cont{
+            background-color: #2E7EB4;
+            text-align: center;
+            color: white;
+            margin-top: 20px;
+            padding: 10px 0px;
+        }
+        #client-list {
+            width: 100%;
+            display: flex;
+            column-gap: 40px;
+            align-items: center;
+            box-sizing: border-box;
+            overflow: hidden;
+
+        }
+        #client-list img{
+            display: inline-block;
+            width: 80px;
+            margin-left: 20px;
+            
+
+
+        }
+    
+
+    </style>
+<style>
+
+    #butterCont{
+
+              display: flex;
+              align-items: center;
+              background-color: #EDEFF0;
+              border-radius: 30px;
+              width: 96%;
+              margin: auto;
+              margin-top: 40px;
+        
+    }
+
+    #butter-text{
+        width: 50%;
+        p{
+            font-size: small;
+        }
+        
+        div{
+            margin-left: 100px;
+            margin-right: 20px;
+        }
+        h1{
+            color: #2E7EB4;
+            padding-bottom: 10px;
+        }
+        button{
+            margin-top: 20px;
+            background: #2E7EB4;
+            color: white;
+            border: none;
+            padding: 10px 25px;
+            border-radius: 40px;
+        }
+
+
+        
+    }
+
+
+    #butter{
+        width: 50%;
+        img{
+        width: 100% ;
+        }
+    }
+
+</style>
+<!-- cards -->
+<style>
+    
+    .card{
+        background-image: url("assets/card-image.png");
+        height: 300px;
+       
+        background-repeat: no-repeat;
+        background-size: cover;
+        display: flex;
+        align-items: flex-end;
+        border-radius: 10px;
+
+        
+      
+        #card-body{
+            background-color: #ffffff80;
+            width: 100%;
+            div{
+                font-size: small;
+                width: 70%;
+                padding: 20px 30px;
+            }
+        }
+
+       #card-body:hover{
+        background-color: #00000080;
+        border-radius: 0px 0px 10px 10px;
+        color: #ffffff;
+       }
+    }
+   
+
+    #card-con{
+        display: flex;
+        gap: 20px;
+        width: 96%;
+        margin: auto;
+        h3{
+            font-size: small;
+            padding-top: 10px;
+        }
+        p{
+            padding-top: 10px;
+        }
+    }
+
+    #services{
+            margin: 60px;
+
+            h1{
+            text-align: center;
+                margin-bottom: 40px;
+            }
+            
+        }
+
+</style>
+
+  </head>
+  <body>
+    <header>
+      <section>
+        <img src="assets/spa-logo.png" alt="" />
+      </section>
+      <nav class="nav">
+        <a class="" href="">Home</a>
+        <a href="">Services</a>
+        <a href="">About</a>
+        <a href="">Testimonials</a>
+        <a href="">Contact</a>
+      </nav>
+      <section class="nav">
+        <button>Get Started →</button>
+      </section>
+      <div id="menu-icon">
+        <i class="bi bi-list"></i>
+      </div>
+    </header>
+    <section id="hero">
+        <div id="hero-text">
+            <h1>A wonderful Place
+                for Relaxation</h1>
+            <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</p>
+            <button>Book an Appointment</button>
+        </div>
+        <div id="hero-image-cont">
+            <img src="assets/hero-image.png" alt="">
+        </div>
+    </section>
+    <section id="client-cont">
+        <p>Our Clients</p>
+        <div id="client-list">
+            <marquee behavior="" direction="">
+                <img src="assets/client1.png" alt="">
+                <img src="assets/client1.png" alt="">
+                <img src="assets/client1.png" alt="">
+                <img src="assets/Google svg.png" alt="">
+                <img src="assets/Amazon svg.png" alt="">
+                <img src="assets/GoDaddy svg.png" alt=""> 
+            </marquee>
+                 
+        </div>
+    </section>
+
+    <section id="butterCont">
+        <div id="butter-text">
+            <div>
+
+                <h1>Refreshing and Awesome</h1>
+                <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</p>
+                <button>Learn more</button>
+                
+            </div>
+        </div>
+        <div id="butter">
+            <img src="assets/image1.png" alt="">
+        </div>
+        
+        
+    </section>
+    <section id="services">
+        <div >
+            <h1>Our Services</h1>
+
+            
+        </div>
+      
+    </section>
+    <main id="card-con">
+        <section class="card">
+            <div id="card-body">
+                <div id="card-text">
+                    <h3>Full Moisturizing Back Massage</h3>
+                    <h3>$125.00- 50 Minute Voucher </h3>
+                    <p>It is a long established fact that a reader will be distracted by the It is a long established fact that a reader.</p>
+                </div>
+            </div>
+        </section>
+        <section class="card">
+            <div id="card-body">
+                <div id="card-text">
+                    <h3>Full Moisturizing Back Massage</h3>
+                    <h3>$125.00- 50 Minute Voucher </h3>
+                    <p>It is a long established fact that a reader will be distracted by the It is a long established fact that a reader.</p>
+                </div>
+            </div>
+        </section>
+        <section class="card">
+            <div id="card-body">
+                <div id="card-text">
+                    <h3>Full Moisturizing Back Massage</h3>
+                    <h3>$125.00- 50 Minute Voucher </h3>
+                    <p>It is a long established fact that a reader will be distracted by the It is a long established fact that a reader.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+
+  </body>
+</html>

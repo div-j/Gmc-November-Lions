@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins:ital,wght@0,300;0,400;1,800&family=Roboto+Slab:wght@100..900&display=swap");
+     html, body {
+        background-color: white;
+        color: black;
+        font-family: "Playfair Display", serif;
+        height: 100%;
+       
+       
+      }
+      *{
+        margin: 0;
+        padding: 0;
+      }
+
+      nav {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        font-size: medium;
+        padding: 0 20px;
+        position: sticky;
+        top: 0;
+
+        background-color: #ffffffcc;
+        z-index: 1000;
+        border: 1px solid red;
+
+      }
+
+      nav div a {
+        text-decoration: none;
+        color: black;
+        padding: 0 10px;
+      }
+      #gtb {
+        background-color: #2e7eb4;
+        color: white;
+        padding: 15px 30px;
+        border: none;
+        border-radius: 30px;
+        font-style: normal;
+        cursor: pointer;
+      }
+    
+      #hero {
+        background-image: linear-gradient(#ffffff 40%, #aed4ee);
+        display: flex;
+        margin-top: 50px;
+        padding: 0 30px;
+        
+        gap: 20px;
+        align-items: center;
+      }
+      #hero-con {
+        width: 45%;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        padding-left: 30px;
+      }
+      #hero-con p {
+        padding: 10px 0;
+        font-size: 1.2rem;
+      }
+      #hero-con h1 {
+        color: #2e7eb4;
+        font-size: 350%;
+      }
+      #hero-image {
+        padding-top: 10px;
+        width: 55%;
+      }
+      #hero-image img {
+        width: 100%;
+      }
+    
+    </style>
+    <!-- <style>
+        @media screen and (max-width:768px) {
+            #hero {
+                flex-direction: column;
+                h1{
+                    font-size: 250%;
+                }
+                #hero-con {
+                    width: 100%;
+                    padding: 0;
+                    align-items: center;
+                    text-align: center;
+                }
+            }
+            
+        }
+    </style> -->
+  </head>
+  <body>
+    <header>
+      <nav>
+        <div>
+          <img src="assets/spa-logo.png" alt="spa-logo" />
+        </div>
+        <div>
+          <a href="#">Home</a>
+          <a href="#">Service</a>
+          <a href="#">About</a>
+          <a href="#">Testimonial</a>
+          <a href="#">Contact</a>
+        </div>
+        <div>
+          <button id="gtb">Get Started</button>
+        </div>
+      </nav>
+    </header>
+    
+      <section id="hero">
+        <div id="hero-con">
+          <h1>A wonderful Place for Relaxation</h1>
+          <p>
+            It is a long established fact that a reader will be distracted by
+            the readable content of a page when looking at its layout.
+          </p>
+          <button id="gtb">Book an Appointment</button>
+        </div>
+        <div id="hero-image">
+          <img src="assets/hero-image.png" alt="" />
+        </div>
+      </section>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet nisi,
+      explicabo officiis debitis, voluptatum recusandae iusto similique a saepe
+      non impedit quod expedita omnis! Vitae vel ut ratione quas aut!
+    </p>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum animi
+      incidunt aut ipsum praesentium culpa excepturi ut in cumque atque, eum
+      aspernatur, fugiat unde eveniet voluptatem! Suscipit molestiae aspernatur
+      magni.
+    </p>
+  </body>
+</html>

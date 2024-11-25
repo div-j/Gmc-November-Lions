@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Position</title>
+    <style>
+        .box1, #box2, #box3, #box4{
+            width: 100px;
+            height: 100px;
+            border: 1px solid;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .box1{
+            padding: 50px;
+            background-color: aqua;
+            position: relative;
+            
+        }
+        #box2{
+            padding: 30px;
+            background-color:black;
+
+        }
+        #box3{
+            padding: 15px;
+            background-color:rgb(139, 98, 98);
+        }
+        #box4{
+            background-color:rgb(214, 38, 38);
+            position: absolute;
+            right: 10;
+        }
+body{
+    height: 100vh;
+    display:flex ;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+#grid-container{
+    width: 300px;
+    height: 400px;
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 10px;
+    background-color: yellow;
+    justify-self: end;
+    align-self: center;
+
+
+    div{
+        width: 100%;
+        background-color: blue;
+        color: aliceblue;
+        height: 100px;
+    }
+}
+
+    </style>
+</head>
+<body>
+
+
+<main class="box1">
+    <section id="box2">
+        <div id="box3">
+            <section id="box4">
+
+            </section>
+        </div>
+    </section>
+</main>
+
+<!-- grid -->
+ <main id="grid-container">
+    <div>first div</div>
+    <div id="sd">second div</div>
+    <div>third div</div>
+    <div>fourth div</div>
+
+ </main>
+
+    
+</body>
+</html>

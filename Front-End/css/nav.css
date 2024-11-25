@@ -1,0 +1,46 @@
+
+       
+*{
+    font-family: Playfair Display, serif;
+    margin: 0;
+    padding: 0;
+}
+header {
+display: flex;
+flex-direction: row;
+align-items: center;
+justify-content: space-between;
+padding: 10px 0px;
+position: sticky;
+top: 0;
+background-color: #ffffff99;
+width: 100%;
+
+
+}
+header img{
+margin-left: 30px;
+width: 50px;
+height: 50px;
+}
+header button{
+margin-right: 30px;
+background: #2E7EB4;
+color: white;
+border: none;
+padding: 10px 15px;
+border-radius: 40px;
+}
+section {
+}
+nav {
+display: flex;
+justify-content: space-around;
+width: 60%;
+
+}
+nav a {
+text-decoration: none;
+color: black;
+}
+
